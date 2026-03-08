@@ -32,5 +32,13 @@ public class CalculaMediaPonderada {
         double mediaPonderada = ((n1 * p1) + (n2 * p2) + (n3 * p3)) / (p1 + p2 + p3);
         
         System.out.println("A media Ponderada das notas declaradas e: " + mediaPonderada);
+        
+        if(mediaPonderada < 5){
+            System.out.println("Aluno reprovado!");
+        }else if(mediaPonderada < 7){
+            System.out.println("Aluno em recuperacao!");
+        }else{
+            System.out.println("Aluno aprovado!");
+        }
     }
 }
